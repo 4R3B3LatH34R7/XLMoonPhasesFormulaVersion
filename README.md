@@ -21,7 +21,13 @@ I believe I've had explained enough already and so, without much further ado, he
 Here, we are going to create some 40-something names but I shall separate them into different sections for different moonphases, like Full Moon/First Quarter Moon/New Moon/Last Quarter Moon etc. As of today, I shall share only Full Moon and New Moon formulae as these are the 2 most important information for my own people in Myanmar. First Quarter and Last Quarter are less useful to use in a religious sense. However, I shall mention formulae for them later.
 
 ## Full Moon
+Now, create the following names.
 
+E_fm
+=(1-(0.002516*(((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85))-(0.0000074*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),2)))
+
+F_fm
+=(((160.7108+(390.67050274*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25)))-(0.0016341*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),2))-(0.00000227*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),3))+(0.000000011*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),4)))-(INT((160.7108+(390.67050274*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25)))-(0.0016341*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),2))-(0.00000227*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),3))+(0.000000011*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),4)))/360)*360))*ATAN(1)*4/180)
 
 
 # Limitations
