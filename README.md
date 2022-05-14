@@ -13,12 +13,14 @@ It's more like Names rather than formulas.\
 Right now, I have added FullMoonDate and NewMoonDate support. I will add First Quarter Moon Date+Time and Last Quarter Moon Date and Time later.\
 However, I'd advise against even having more than 1 moonphases in 1 file because with Full Moon Date only, there are about 20 Names containing formulae and that increases to more than 40 Names if I added New Moon Date+Times.\
 I used to work with much more Names than this but since each Name in Moonphase estimation is a formula, it usually takes a lot of RAM to recalculate whenever a Name was used.\
-So, every single use of a related name can cause Excel to get locked up for like a few seconds to several minutes depending on the specs of the machine. So, be warned.\
+So, every single use of a related name can cause Excel to get locked up for like a few seconds to several minutes depending on the specs of the machine. So, be warned.
 
 Why use Names then? Because this is neater than just laying out the formula cells in several rows in the worksheet but that's just my opinion and the users may choose to use worksheet ranges rather than Names if they prefer that way.
 
-I believe I've had enough said already and so, without much further ado, here goes nothing!
+I believe I've had explained enough already and so, without much further ado, here goes nothing!
+Here, we are going to create some 40-something names but I shall separate them into different sections for different moonphases, like Full Moon/First Quarter Moon/New Moon/Last Quarter Moon etc. As of today, I shall share only Full Moon and New Moon formulae as these are the 2 most important information for my own people in Myanmar. First Quarter and Last Quarter are less useful to use in a religious sense. However, I shall mention formulae for them later.
 
+## Full Moon
 
 
 
