@@ -9,7 +9,18 @@ Boy, that's a book on very complicated stuff.\
 I'd never really understand much out of that book but anyway, since I got a hold of the VBA code, I thought that I could convert/port the VBA code inside into Excel formulae so that VBA-averse people can still guesstimate the moonphases.
 
 # The formulae
-It's more like Names rather than formulas.
+It's more like Names rather than formulas.\
+Right now, I have added FullMoonDate and NewMoonDate support. I will add First Quarter Moon Date+Time and Last Quarter Moon Date and Time later.\
+However, I'd advise against even having more than 1 moonphases in 1 file because with Full Moon Date only, there are about 20 Names containing formulae and that increases to more than 40 Names if I added New Moon Date+Times.\
+I used to work with much more Names than this but since each Name in Moonphase estimation is a formula, it usually takes a lot of RAM to recalculate whenever a Name was used.\
+So, every single use of a related name can cause Excel to get locked up for like a few seconds to several minutes depending on the specs of the machine. So, be warned.\
+
+Why use Names then? Because this is neater than just laying out the formula cells in several rows in the worksheet but that's just my opinion and the users may choose to use worksheet ranges rather than Names if they prefer that way.
+
+I believe I've had enough said already and so, without much further ado, here goes nothing!
+
+
+
 
 # Limitations
 Currently, there may be issues regarding using the formulae+Names in lower-end computers.\
