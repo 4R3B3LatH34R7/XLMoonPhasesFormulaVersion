@@ -201,6 +201,19 @@ Now, create the following names.
 =(DATE(YY_fm,MM_fm,INT(DD_fm))+TIME(HH_fm,Mi_fm,SS_fm))
   </code>
   
+## New Moon
+The following Names are needed only for calculation of New Moon Dates.
+  
+###### 32.mp_mpnm
+<code>
+  =0
+    </code>
+    
+###### 33.
+    
+    
+    
+    
 # Limitations
 Currently, there may be issues regarding using the formulae+Names in lower-end computers.\
 If that occured, users may choose to copy/paste the formulae inside the names into worksheet ranges and use these cell ranges containing formulae as references in the formulas and remove the names.\
