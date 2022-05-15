@@ -1,4 +1,4 @@
-# XLMoonPhasesFormulaVersion
+# Excel Moon Phases calculation Formulae
 A combination of Excel worksheet formulae and Names to get the dates and times of different phases of the moon
 
 # A brief background
