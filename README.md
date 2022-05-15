@@ -300,7 +300,7 @@ The following Names are needed only for calculation of New Moon Dates.
 </code>
  
 ###### 51.A14_nm
-<node>
+<code>
 =(((331.55+(3.592518*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((331.55+(3.592518*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)  
 </code>
     
