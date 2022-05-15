@@ -358,6 +358,12 @@ The following Names are needed only for calculation of New Moon Dates.
 <code>
 =(DATE(YY_nm,MM_nm,INT(DD_nm))+TIME(HH_nm,Mi_nm,SS_nm))  
 </code>
+
+# First Quarter Moon
+To be updated soon.
+
+# Last Quarter Moon
+To be updated soon.
     
 # Limitations
 Currently, there may be issues regarding using the formulae+Names in lower-end computers.\
