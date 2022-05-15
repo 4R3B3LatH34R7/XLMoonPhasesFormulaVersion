@@ -206,13 +206,158 @@ The following Names are needed only for calculation of New Moon Dates.
   
 ###### 32.mp_mpnm
 <code>
-  =0
+=0
+</code>
+    
+###### 33.E_nm
+<code>
+=(1-(0.002516*(((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85))-(0.0000074*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2)))
     </code>
     
-###### 33.
+###### 34.F_nm
+<code>
+=(((160.7108+(390.67050274*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))-(0.0016341*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),2))-(0.00000227*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),3))+(0.000000011*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),4)))-(INT((160.7108+(390.67050274*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25)))-(0.0016341*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),2))-(0.00000227*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),3))+(0.000000011*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpfm*0.25))/1236.85),4)))/360)*360))*ATAN(1)*4/180)
+  </code>
     
+###### 35.M_nm
+<code>
+=(((2.5534+(29.10535669*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))-(0.0000218*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2))-(0.00000011*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),3)))-(INT((2.5534+(29.10535669*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))-(0.0000218*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2))-(0.00000011*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),3)))/360)*360))*ATAN(1)*4/180)
+</code>
     
+###### 36.MS_nm
+<code>
+=(((201.5643+(385.81693528*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))+(0.0107438*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2))+(0.00001239*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),3))-(0.000000058*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),4)))-(INT((201.5643+(385.81693528*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))+(0.0107438*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2))+(0.00001239*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),3))-(0.000000058*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),4)))/360)*360))*ATAN(1)*4/180)  
+</code>
     
+###### 37.Omega_nm
+<code>
+=(((124.7746-(1.5637558*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))+(0.0020691*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2))+(0.00000215*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),3)))-(INT((124.7746-(1.5637558*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))+(0.0020691*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2))+(0.00000215*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),3)))/360)*360))*ATAN(1)*4/180)  
+</code>
+    
+###### 38.A01_nm
+<code>
+=(((299.77+(0.107408*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))-(0.009173*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2)))-(INT((299.77+(0.107408*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))-(0.009173*POWER((((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2)))/360)*360))*ATAN(1)*4/180)
+</code>
+  
+###### 39.A02_nm
+<code>
+=(((251.88+0.016321*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))-(INT((251.88+0.016321*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))/360)*360))*ATAN(1)*4/180)  
+</code>
+    
+###### 40.A03_nm
+<code>
+=(((251.83+(26.651886*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((251.83+(26.651886*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+    
+###### 41.A04_nm
+<code>
+=(((349.42+(36.412478*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((349.42+(36.412478*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+    
+###### 42.A05_nm
+<code>
+=(((84.66+(18.206239*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((84.66+(18.206239*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+    
+###### 43.A06_nm
+<code>
+=(((141.74+(53.303771*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((141.74+(53.303771*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+    
+###### 44.A07_nm
+<code>
+=(((207.14+(2.453732*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((207.14+(2.453732*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+
+###### 45.A08_nm
+<code>
+=(((154.84+(7.30686*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((154.84+(7.30686*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)  
+</code>
+    
+###### 46.A09_nm
+<code>
+=(((34.52+(27.261239*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((34.52+(27.261239*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+ 
+###### 47.A10_nm
+<code>
+=(((207.19+(0.121824*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((207.19+(0.121824*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+    
+###### 48.A11_nm
+<code>
+=(((291.34+(1.844379*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((291.34+(1.844379*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)  
+</code>
+ 
+###### 49.A12_nm
+<code>    
+=(((161.72+(24.198154*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((161.72+(24.198154*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+
+###### 50.A13_nm
+<code>
+=(((239.56+(25.513099*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((239.56+(25.513099*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)
+</code>
+ 
+###### 51.A14_nm
+<node>
+=(((331.55+(3.592518*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))-(INT((331.55+(3.592518*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25))))/360)*360))*ATAN(1)*4/180)  
+</code>
+    
+###### 52.PT_nm
+<code>
+=SUM(((-0.4072*SIN(MS_nm))+(0.17241*E_nm*SIN(M_nm))+(0.01608*SIN(2*MS_nm))), ((0.01039*SIN(2*F_nm))+(0.00739*E_nm*SIN(MS_nm-M_nm))-(0.00514*E_nm*SIN(MS_nm+M_nm))), ((0.00208*POWER(E_nm,2)*SIN(2*M_nm))-(0.00111*SIN(MS_nm-(2*F_nm)))-(0.00057*SIN(MS_nm+(2*F_nm)))), ((0.00056*E_nm*SIN((2*MS_nm)+M_nm))-(0.00042*SIN(3*MS_nm))+(0.00042*E_nm*SIN(M_nm+(2*F_nm)))), ((0.00038*E_nm*SIN(M_nm-(2*F_nm)))-(0.00024*E_nm*SIN((2*MS_nm)-M_nm))), ((-0.00017*SIN(Omega_nm))-(0.00007*SIN(MS_nm+(2*M_nm)))+(0.00004*SIN((2*MS_nm)-(2*F_nm)))), ((0.00004*SIN(3*M_nm))+(0.00003*SIN(MS_nm+M_nm-(2*F_nm)))+(0.00003*SIN((2*MS_nm)+(2*F_nm)))), ((-0.00003*SIN(MS_nm+M_nm+(2*F_nm)))+(0.00003*SIN(MS_nm-M_nm+(2*F_nm)))-(0.00002*SIN(MS_nm-M_nm-(2*F_nm)))), ((-0.00002*SIN((3*MS_nm)+M_nm))+(0.00002*SIN(4*MS_nm))))
+</code>
+    
+###### 53.PK_nm
+<code>
+=SUM(((0.000325*SIN(A01_nm))+(0.000165*SIN(A02_nm))+(0.000164*SIN(A03_nm))), ((0.000126*SIN(A04_nm))+(0.00011*SIN(A05_nm))+(0.000062*SIN(A06_nm))), ((0.00006*SIN(A07_nm))+(0.000056*SIN(A08_nm))+(0.000047*SIN(A09_nm))), ((0.000042*SIN(A10_nm))+(0.00004*SIN(A11_nm))+(0.000037*SIN(A12_nm))), ((0.000035*SIN(A13_nm))+(0.000023*SIN(A14_nm))))  
+</code>
+    
+###### 54.W_nm
+<code>
+=0  
+</code>
+
+###### 55.JDE_nm
+<code>    
+=2451550.09765+(29.530588853*((INT(((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25)-2000)*12.3685))+(mp_mpnm*0.25)))+(0.0001337*POWER((((INT((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),2))-(0.00000015*POWER((((INT((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),3))+(0.00000000073*POWER((((INT((YEAR(theDate)+(theDate-DATE(YEAR(theDate),1,1))/365.25-2000)*12.3685))+(mp_mpnm*0.25))/1236.85),4))  
+</code>
+
+###### 55.DD_nm
+<code>
+=(((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-(INT(365.25*(INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-122.1)/365.25))))-INT(30.6001*(INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-(INT(365.25*(INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-122.1)/365.25)))))/30.6001)))+(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5)-INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))  
+</code>
+    
+###### 56.MM_nm
+<code>
+=(INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-(INT(365.25*(INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-122.1)/365.25)))))/30.6001))- IF((INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-(INT(365.25*(INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-122.1)/365.25)))))/30.6001))<14, 1, 13) 
+</code>
+
+###### 57.YY_mm
+<code>
+=(INT((((IF(INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))>=2299161, INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))+1+INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)-(INT(INT((INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))-1867216.25)/36524.25)/4)), INT(((JDE_nm+PK_nm+PT_nm+W_nm+(TimeZone/24)-(mp_deltaT/86400))+0.5))))+1524)-122.1)/365.25))-IF(MM_nm>2, 4716, 4715)  
+</code>  
+  
+###### 58.HH_nm
+<code>
+=((DD_nm-INT(DD_nm))*24)  
+</code>  
+  
+###### 59.Mi_nm
+<code>
+=((HH_nm-INT(HH_nm))*60)  
+</code>
+  
+###### 60.SS_nm
+<code>
+=((Mi_nm-INT(Mi_nm))*60)  
+</code>  
+    
+###### 61.NewMoonDate
+<code>
+=(DATE(YY_nm,MM_nm,INT(DD_nm))+TIME(HH_nm,Mi_nm,SS_nm))  
+</code>
     
 # Limitations
 Currently, there may be issues regarding using the formulae+Names in lower-end computers.\
